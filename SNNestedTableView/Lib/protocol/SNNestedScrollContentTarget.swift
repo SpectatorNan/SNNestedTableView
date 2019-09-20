@@ -9,9 +9,10 @@
 import UIKit
 
 typealias SNNestedScrollContentViewControllerTarget = UIViewController & SNNestedScrollContentTarget
+
 protocol SNNestedScrollContentTarget: class {
     var canScroll: Bool { get set }
     var isRefresh: Bool { get set }
-    var tagStr: String { get set }
+    var tagStr: String { get }
     var scrollView: UIScrollView { get }
 }

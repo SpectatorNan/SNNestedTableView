@@ -18,12 +18,7 @@ class SNNestedTableContentViewController: SNNestedScrollContentViewControllerTar
     }
     
     var tagStr: String {
-        set {
-            title = newValue
-        }
-        get {
             return title ?? ""
-        }
     }
     
     var scrollView: UIScrollView {
@@ -100,7 +95,7 @@ extension SNNestedTableContentViewController {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
+        logDebug("child table did scroll")
         if !canScroll {
             scrollView.contentOffset = .zero
         }

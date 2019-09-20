@@ -8,7 +8,7 @@ target 'SNNestedTableView' do
 
 pod 'JXSegmentedView'
 
-
+pod 'SnapKit'
 pod 'FSPagerView'
 
 pod 'Kingfisher'

@@ -13,6 +13,7 @@
 		D734EA5F2334B0ED00D2BC08 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA5E2334B0ED00D2BC08 /* UIViewExtensions.swift */; };
 		D734EA612334B19400D2BC08 /* SNLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA602334B19400D2BC08 /* SNLog.swift */; };
 		D734EA642334B87800D2BC08 /* SNNestedScrollContentTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA632334B87800D2BC08 /* SNNestedScrollContentTarget.swift */; };
+		D734EA672334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA662334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift */; };
 		D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE523335FB800B00926 /* AppDelegate.swift */; };
 		D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE723335FB800B00926 /* SceneDelegate.swift */; };
 		D792BDEA23335FB800B00926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE923335FB800B00926 /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		D734EA5E2334B0ED00D2BC08 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D734EA602334B19400D2BC08 /* SNLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNLog.swift; sourceTree = "<group>"; };
 		D734EA632334B87800D2BC08 /* SNNestedScrollContentTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedScrollContentTarget.swift; sourceTree = "<group>"; };
+		D734EA662334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedCollectionContnetViewController.swift; sourceTree = "<group>"; };
 		D792BDE223335FB800B00926 /* SNNestedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNNestedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D792BDE523335FB800B00926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D792BDE723335FB800B00926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				D792BE1B23337CD300B00926 /* SNNestedTableContentViewController.swift */,
 				D792BDE923335FB800B00926 /* ViewController.swift */,
+				D734EA662334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				D792BE202334846F00B00926 /* TopCell.swift in Sources */,
 				D734EA612334B19400D2BC08 /* SNLog.swift in Sources */,
 				D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */,
+				D734EA672334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift in Sources */,
 				D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */,
 				D734EA642334B87800D2BC08 /* SNNestedScrollContentTarget.swift in Sources */,
 				D734EA5F2334B0ED00D2BC08 /* UIViewExtensions.swift in Sources */,

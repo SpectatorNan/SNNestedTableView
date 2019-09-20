@@ -130,15 +130,12 @@ extension ViewController: UITableViewDataSource {
             
             
             var contentVCs: [SNNestedScrollContentViewControllerTarget] = []
-            titles.forEach { (title) in
-               
-            }
-            
+         
             for (index, title) in titles.enumerated() {
-                let vc = SNNestedTableContentViewController()
-                               vc.title = title
-                               vc.view.backgroundColor = colors[index]
-                               contentVCs.append(vc)
+                let vc: SNNestedScrollContentViewControllerTarget = index%2 == 0 ? SNNestedTableContentViewController() : SNNestedCollectionContnetViewController()
+                vc.title = title
+                vc.view.backgroundColor = colors[index]
+                contentVCs.append(vc)
             }
             
             cell.viewControllers = contentVCs
@@ -185,7 +182,7 @@ extension ViewController {
     
     func cellScroll(contentView: SNNestedPageContent, startIndex: Int, endIndex: Int, progress: CGFloat) {
         logDebug("page content scroll")
-        // MAKR: - 这里注释掉就不会左右滑动时 sectionheader回到第一行
+        // MARK: - 这里注释掉就不会左右滑动时 sectionheader回到第一行
         tableView.isScrollEnabled = false
     }
 }
