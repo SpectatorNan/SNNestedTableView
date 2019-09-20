@@ -185,6 +185,7 @@ extension ViewController {
     
     func cellScroll(contentView: SNNestedPageContent, startIndex: Int, endIndex: Int, progress: CGFloat) {
         logDebug("page content scroll")
+        // MAKR: - 这里注释掉就不会左右滑动时 sectionheader回到第一行
         tableView.isScrollEnabled = false
     }
 }
