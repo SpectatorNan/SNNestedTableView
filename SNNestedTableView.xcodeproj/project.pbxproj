@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D734EA58233498C300D2BC08 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = D734EA57233498C300D2BC08 /* test1.png */; };
+		D734EA5A233498D600D2BC08 /* func.png in Resources */ = {isa = PBXBuildFile; fileRef = D734EA59233498D600D2BC08 /* func.png */; };
+		D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE523335FB800B00926 /* AppDelegate.swift */; };
+		D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE723335FB800B00926 /* SceneDelegate.swift */; };
+		D792BDEA23335FB800B00926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE923335FB800B00926 /* ViewController.swift */; };
+		D792BDED23335FB800B00926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792BDEB23335FB800B00926 /* Main.storyboard */; };
+		D792BDEF23335FB900B00926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D792BDEE23335FB900B00926 /* Assets.xcassets */; };
+		D792BDF223335FB900B00926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792BDF023335FB900B00926 /* LaunchScreen.storyboard */; };
+		D792BDFD23335FB900B00926 /* SNNestedTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDFC23335FB900B00926 /* SNNestedTableViewTests.swift */; };
+		D792BE0823335FB900B00926 /* SNNestedTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE0723335FB900B00926 /* SNNestedTableViewUITests.swift */; };
+		D792BE18233360A900B00926 /* SNNestedPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE17233360A900B00926 /* SNNestedPageContentView.swift */; };
+		D792BE1A2333744F00B00926 /* SNNestedScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE192333744F00B00926 /* SNNestedScrollTableViewCell.swift */; };
+		D792BE1C23337CD300B00926 /* SNNestedTableContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE1B23337CD300B00926 /* SNNestedTableContentViewController.swift */; };
+		D792BE1E2333823A00B00926 /* SNNestedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE1D2333823A00B00926 /* SNNestedTableView.swift */; };
+		D792BE202334846F00B00926 /* TopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE1F2334846F00B00926 /* TopCell.swift */; };
+		D7ED708BB2327804EDDF846A /* Pods_SNNestedTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B66D65B86E563E80BDF741 /* Pods_SNNestedTableView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D792BDF923335FB900B00926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D792BDDA23335FB800B00926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D792BDE123335FB800B00926;
+			remoteInfo = SNNestedTableView;
+		};
+		D792BE0423335FB900B00926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D792BDDA23335FB800B00926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D792BDE123335FB800B00926;
+			remoteInfo = SNNestedTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B66D65B86E563E80BDF741 /* Pods_SNNestedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNNestedTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F09818CE915F2957B0AED83 /* Pods-SNNestedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNNestedTableView.release.xcconfig"; path = "Target Support Files/Pods-SNNestedTableView/Pods-SNNestedTableView.release.xcconfig"; sourceTree = "<group>"; };
+		D734EA57233498C300D2BC08 /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
+		D734EA59233498D600D2BC08 /* func.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = func.png; sourceTree = "<group>"; };
+		D792BDE223335FB800B00926 /* SNNestedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNNestedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D792BDE523335FB800B00926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D792BDE723335FB800B00926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D792BDE923335FB800B00926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D792BDEC23335FB800B00926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D792BDEE23335FB900B00926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D792BDF123335FB900B00926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D792BDF323335FB900B00926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D792BDF823335FB900B00926 /* SNNestedTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNNestedTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D792BDFC23335FB900B00926 /* SNNestedTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedTableViewTests.swift; sourceTree = "<group>"; };
+		D792BDFE23335FB900B00926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D792BE0323335FB900B00926 /* SNNestedTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNNestedTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D792BE0723335FB900B00926 /* SNNestedTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedTableViewUITests.swift; sourceTree = "<group>"; };
+		D792BE0923335FB900B00926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D792BE17233360A900B00926 /* SNNestedPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedPageContentView.swift; sourceTree = "<group>"; };
+		D792BE192333744F00B00926 /* SNNestedScrollTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedScrollTableViewCell.swift; sourceTree = "<group>"; };
+		D792BE1B23337CD300B00926 /* SNNestedTableContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedTableContentViewController.swift; sourceTree = "<group>"; };
+		D792BE1D2333823A00B00926 /* SNNestedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedTableView.swift; sourceTree = "<group>"; };
+		D792BE1F2334846F00B00926 /* TopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
+		E40E292AA3830FB802963A8C /* Pods-SNNestedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNNestedTableView.debug.xcconfig"; path = "Target Support Files/Pods-SNNestedTableView/Pods-SNNestedTableView.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D792BDDF23335FB800B00926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7ED708BB2327804EDDF846A /* Pods_SNNestedTableView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D792BDF523335FB900B00926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D792BE0023335FB900B00926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D734EA56233498AD00D2BC08 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				D734EA59233498D600D2BC08 /* func.png */,
+				D734EA57233498C300D2BC08 /* test1.png */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		D792BDD923335FB800B00926 = {
+			isa = PBXGroup;
+			children = (
+				D792BDE423335FB800B00926 /* SNNestedTableView */,
+				D792BDFB23335FB900B00926 /* SNNestedTableViewTests */,
+				D792BE0623335FB900B00926 /* SNNestedTableViewUITests */,
+				D792BDE323335FB800B00926 /* Products */,
+				F2F8C5E28AD00F31921ED396 /* Pods */,
+				EAE1F4661A5DD314EBDCFDBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D792BDE323335FB800B00926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D792BDE223335FB800B00926 /* SNNestedTableView.app */,
+				D792BDF823335FB900B00926 /* SNNestedTableViewTests.xctest */,
+				D792BE0323335FB900B00926 /* SNNestedTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D792BDE423335FB800B00926 /* SNNestedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D734EA56233498AD00D2BC08 /* source */,
+				D792BE152333606700B00926 /* Lib */,
+				D792BDE523335FB800B00926 /* AppDelegate.swift */,
+				D792BDE723335FB800B00926 /* SceneDelegate.swift */,
+				D792BDE923335FB800B00926 /* ViewController.swift */,
+				D792BDEB23335FB800B00926 /* Main.storyboard */,
+				D792BDEE23335FB900B00926 /* Assets.xcassets */,
+				D792BDF023335FB900B00926 /* LaunchScreen.storyboard */,
+				D792BDF323335FB900B00926 /* Info.plist */,
+				D792BE1F2334846F00B00926 /* TopCell.swift */,
+			);
+			path = SNNestedTableView;
+			sourceTree = "<group>";
+		};
+		D792BDFB23335FB900B00926 /* SNNestedTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D792BDFC23335FB900B00926 /* SNNestedTableViewTests.swift */,
+				D792BDFE23335FB900B00926 /* Info.plist */,
+			);
+			path = SNNestedTableViewTests;
+			sourceTree = "<group>";
+		};
+		D792BE0623335FB900B00926 /* SNNestedTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D792BE0723335FB900B00926 /* SNNestedTableViewUITests.swift */,
+				D792BE0923335FB900B00926 /* Info.plist */,
+			);
+			path = SNNestedTableViewUITests;
+			sourceTree = "<group>";
+		};
+		D792BE152333606700B00926 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D792BE162333607600B00926 /* ContentView */,
+				D792BE192333744F00B00926 /* SNNestedScrollTableViewCell.swift */,
+				D792BE1B23337CD300B00926 /* SNNestedTableContentViewController.swift */,
+				D792BE1D2333823A00B00926 /* SNNestedTableView.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D792BE162333607600B00926 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				D792BE17233360A900B00926 /* SNNestedPageContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		EAE1F4661A5DD314EBDCFDBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02B66D65B86E563E80BDF741 /* Pods_SNNestedTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2F8C5E28AD00F31921ED396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E40E292AA3830FB802963A8C /* Pods-SNNestedTableView.debug.xcconfig */,
+				6F09818CE915F2957B0AED83 /* Pods-SNNestedTableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D792BDE123335FB800B00926 /* SNNestedTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D792BE0C23335FB900B00926 /* Build configuration list for PBXNativeTarget "SNNestedTableView" */;
+			buildPhases = (
+				49C21D720BA3A0C9DD3F6D0F /* [CP] Check Pods Manifest.lock */,
+				D792BDDE23335FB800B00926 /* Sources */,
+				D792BDDF23335FB800B00926 /* Frameworks */,
+				D792BDE023335FB800B00926 /* Resources */,
+				539F8320416490006FA63D41 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNNestedTableView;
+			productName = SNNestedTableView;
+			productReference = D792BDE223335FB800B00926 /* SNNestedTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D792BDF723335FB900B00926 /* SNNestedTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D792BE0F23335FB900B00926 /* Build configuration list for PBXNativeTarget "SNNestedTableViewTests" */;
+			buildPhases = (
+				D792BDF423335FB900B00926 /* Sources */,
+				D792BDF523335FB900B00926 /* Frameworks */,
+				D792BDF623335FB900B00926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D792BDFA23335FB900B00926 /* PBXTargetDependency */,
+			);
+			name = SNNestedTableViewTests;
+			productName = SNNestedTableViewTests;
+			productReference = D792BDF823335FB900B00926 /* SNNestedTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D792BE0223335FB900B00926 /* SNNestedTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D792BE1223335FB900B00926 /* Build configuration list for PBXNativeTarget "SNNestedTableViewUITests" */;
+			buildPhases = (
+				D792BDFF23335FB900B00926 /* Sources */,
+				D792BE0023335FB900B00926 /* Frameworks */,
+				D792BE0123335FB900B00926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D792BE0523335FB900B00926 /* PBXTargetDependency */,
+			);
+			name = SNNestedTableViewUITests;
+			productName = SNNestedTableViewUITests;
+			productReference = D792BE0323335FB900B00926 /* SNNestedTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D792BDDA23335FB800B00926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = spectator;
+				TargetAttributes = {
+					D792BDE123335FB800B00926 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D792BDF723335FB900B00926 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D792BDE123335FB800B00926;
+					};
+					D792BE0223335FB900B00926 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D792BDE123335FB800B00926;
+					};
+				};
+			};
+			buildConfigurationList = D792BDDD23335FB800B00926 /* Build configuration list for PBXProject "SNNestedTableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D792BDD923335FB800B00926;
+			productRefGroup = D792BDE323335FB800B00926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D792BDE123335FB800B00926 /* SNNestedTableView */,
+				D792BDF723335FB900B00926 /* SNNestedTableViewTests */,
+				D792BE0223335FB900B00926 /* SNNestedTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D792BDE023335FB800B00926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D792BDF223335FB900B00926 /* LaunchScreen.storyboard in Resources */,
+				D734EA5A233498D600D2BC08 /* func.png in Resources */,
+				D734EA58233498C300D2BC08 /* test1.png in Resources */,
+				D792BDEF23335FB900B00926 /* Assets.xcassets in Resources */,
+				D792BDED23335FB800B00926 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D792BDF623335FB900B00926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D792BE0123335FB900B00926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49C21D720BA3A0C9DD3F6D0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNNestedTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		539F8320416490006FA63D41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNNestedTableView/Pods-SNNestedTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNNestedTableView/Pods-SNNestedTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNNestedTableView/Pods-SNNestedTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D792BDDE23335FB800B00926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D792BE1E2333823A00B00926 /* SNNestedTableView.swift in Sources */,
+				D792BE1A2333744F00B00926 /* SNNestedScrollTableViewCell.swift in Sources */,
+				D792BDEA23335FB800B00926 /* ViewController.swift in Sources */,
+				D792BE202334846F00B00926 /* TopCell.swift in Sources */,
+				D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */,
+				D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */,
+				D792BE18233360A900B00926 /* SNNestedPageContentView.swift in Sources */,
+				D792BE1C23337CD300B00926 /* SNNestedTableContentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D792BDF423335FB900B00926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D792BDFD23335FB900B00926 /* SNNestedTableViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D792BDFF23335FB900B00926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D792BE0823335FB900B00926 /* SNNestedTableViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D792BDFA23335FB900B00926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D792BDE123335FB800B00926 /* SNNestedTableView */;
+			targetProxy = D792BDF923335FB900B00926 /* PBXContainerItemProxy */;
+		};
+		D792BE0523335FB900B00926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D792BDE123335FB800B00926 /* SNNestedTableView */;
+			targetProxy = D792BE0423335FB900B00926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D792BDEB23335FB800B00926 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D792BDEC23335FB800B00926 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D792BDF023335FB900B00926 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D792BDF123335FB900B00926 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D792BE0A23335FB900B00926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D792BE0B23335FB900B00926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D792BE0D23335FB900B00926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40E292AA3830FB802963A8C /* Pods-SNNestedTableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNNestedTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywxyzm.SNNestedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D792BE0E23335FB900B00926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F09818CE915F2957B0AED83 /* Pods-SNNestedTableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNNestedTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywxyzm.SNNestedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D792BE1023335FB900B00926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNNestedTableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywxyzm.SNNestedTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNNestedTableView.app/SNNestedTableView";
+			};
+			name = Debug;
+		};
+		D792BE1123335FB900B00926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNNestedTableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywxyzm.SNNestedTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNNestedTableView.app/SNNestedTableView";
+			};
+			name = Release;
+		};
+		D792BE1323335FB900B00926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNNestedTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywxyzm.SNNestedTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SNNestedTableView;
+			};
+			name = Debug;
+		};
+		D792BE1423335FB900B00926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNNestedTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywxyzm.SNNestedTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SNNestedTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D792BDDD23335FB800B00926 /* Build configuration list for PBXProject "SNNestedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D792BE0A23335FB900B00926 /* Debug */,
+				D792BE0B23335FB900B00926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D792BE0C23335FB900B00926 /* Build configuration list for PBXNativeTarget "SNNestedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D792BE0D23335FB900B00926 /* Debug */,
+				D792BE0E23335FB900B00926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D792BE0F23335FB900B00926 /* Build configuration list for PBXNativeTarget "SNNestedTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D792BE1023335FB900B00926 /* Debug */,
+				D792BE1123335FB900B00926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D792BE1223335FB900B00926 /* Build configuration list for PBXNativeTarget "SNNestedTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D792BE1323335FB900B00926 /* Debug */,
+				D792BE1423335FB900B00926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D792BDDA23335FB800B00926 /* Project object */;
+}
