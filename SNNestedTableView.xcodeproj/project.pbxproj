@@ -167,6 +167,7 @@
 		D792BDE423335FB800B00926 /* SNNestedTableView */ = {
 			isa = PBXGroup;
 			children = (
+				D734EA5B2334B0B900D2BC08 /* Utils */,
 				D734EA652334B97A00D2BC08 /* demo */,
 				D734EA56233498AD00D2BC08 /* source */,
 				D792BE152333606700B00926 /* Lib */,
@@ -203,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				D734EA622334B85300D2BC08 /* protocol */,
-				D734EA5B2334B0B900D2BC08 /* Utils */,
 				D792BE162333607600B00926 /* View */,
 			);
 			path = Lib;

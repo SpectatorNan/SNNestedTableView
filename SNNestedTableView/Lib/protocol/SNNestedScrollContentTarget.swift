@@ -8,9 +8,9 @@
 
 import UIKit
 
-typealias SNNestedScrollContentViewControllerTarget = UIViewController & SNNestedScrollContentTarget
+public typealias SNNestedScrollContentViewControllerTarget = UIViewController & SNNestedScrollContentTarget
 
-protocol SNNestedScrollContentTarget: class {
+public protocol SNNestedScrollContentTarget: class {
     var canScroll: Bool { get set }
     var isRefresh: Bool { get set }
     var tagStr: String { get }

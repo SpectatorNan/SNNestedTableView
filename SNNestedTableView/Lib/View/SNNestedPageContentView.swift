@@ -8,23 +8,20 @@
 
 import UIKit
 
-typealias ViewCallBack = (SNNestedPageContent) -> Void
+public typealias ViewCallBack = (SNNestedPageContent) -> Void
 /// 滑动view, 开始页索引，结束页索引， 进度，垂直滑动距离，水平滑动距离
-typealias ScrollListenCallBack = (SNNestedPageContent, Int, Int, CGFloat) -> Void
+public typealias ScrollListenCallBack = (SNNestedPageContent, Int, Int, CGFloat) -> Void
 /// 滑动view, 开始页索引，结束页索引
-typealias ScorllDidEndDecelerate = (SNNestedPageContent, Int, Int) -> Void
-typealias PageContentViewSource = (Int) -> (UIView)
+public typealias ScorllDidEndDecelerate = (SNNestedPageContent, Int, Int) -> Void
+//public typealias PageContentViewSource = (Int) -> (UIView)
 
-public let SNNestedScreenW = UIScreen.main.bounds.width
+let SNNestedScreenW = UIScreen.main.bounds.width
 
-public let SNNestedScreenH = UIScreen.main.bounds.height
-
-protocol SNNestedPageContentDelegate {
-    
-}
+let SNNestedScreenH = UIScreen.main.bounds.height
 
 
-class SNNestedPageContent: UIView {
+
+public class SNNestedPageContent: UIView {
     
     fileprivate let cellID = "SNNestedPageContentXXXX"
     
@@ -100,7 +97,7 @@ class SNNestedPageContent: UIView {
     /// 结束滑动
     var didEndDecelerating: ScorllDidEndDecelerate?
     /// 返回每页显示的view
-    var pageContentViewSouce: PageContentViewSource?
+//    var pageContentViewSouce: PageContentViewSource?
 }
 
 
@@ -129,11 +126,11 @@ extension SNNestedPageContent {
 
 extension SNNestedPageContent: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childsViewControl.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
         return cell
     }
@@ -141,7 +138,7 @@ extension SNNestedPageContent: UICollectionViewDataSource {
 
 extension SNNestedPageContent: UICollectionViewDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         cell.contentView.subviews.forEach { $0.removeFromSuperview() }
         let childVc = childsViewControl[indexPath.row]
         childVc.view.frame = cell.contentView.bounds
@@ -151,14 +148,14 @@ extension SNNestedPageContent: UICollectionViewDelegate {
 
 extension SNNestedPageContent {
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
          isSelectBtn = false
         startOffsetX = scrollView.contentOffset.x
         
         beginDragging?(self)
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if isSelectBtn {
             return
@@ -188,7 +185,7 @@ extension SNNestedPageContent {
         didScroll?(self, startIndex, endIndex, progress)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let scrollW = scrollView.bounds.size.width
         let currentOffsetX = scrollView.contentOffset.x
         let startIndex: Int = Int(floor(startOffsetX / scrollW))

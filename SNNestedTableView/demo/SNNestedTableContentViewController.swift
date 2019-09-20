@@ -96,6 +96,8 @@ extension SNNestedTableContentViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         logDebug("child table did scroll")
+        
+        
         if !canScroll {
             scrollView.contentOffset = .zero
         }
