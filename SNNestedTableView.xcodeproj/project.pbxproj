@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D734EA58233498C300D2BC08 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = D734EA57233498C300D2BC08 /* test1.png */; };
 		D734EA5A233498D600D2BC08 /* func.png in Resources */ = {isa = PBXBuildFile; fileRef = D734EA59233498D600D2BC08 /* func.png */; };
+		D734EA5D2334B0CC00D2BC08 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA5C2334B0CC00D2BC08 /* ArrayExtensions.swift */; };
+		D734EA5F2334B0ED00D2BC08 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA5E2334B0ED00D2BC08 /* UIViewExtensions.swift */; };
+		D734EA612334B19400D2BC08 /* SNLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA602334B19400D2BC08 /* SNLog.swift */; };
 		D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE523335FB800B00926 /* AppDelegate.swift */; };
 		D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE723335FB800B00926 /* SceneDelegate.swift */; };
 		D792BDEA23335FB800B00926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE923335FB800B00926 /* ViewController.swift */; };
@@ -47,6 +50,9 @@
 		6F09818CE915F2957B0AED83 /* Pods-SNNestedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNNestedTableView.release.xcconfig"; path = "Target Support Files/Pods-SNNestedTableView/Pods-SNNestedTableView.release.xcconfig"; sourceTree = "<group>"; };
 		D734EA57233498C300D2BC08 /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
 		D734EA59233498D600D2BC08 /* func.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = func.png; sourceTree = "<group>"; };
+		D734EA5C2334B0CC00D2BC08 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		D734EA5E2334B0ED00D2BC08 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		D734EA602334B19400D2BC08 /* SNLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNLog.swift; sourceTree = "<group>"; };
 		D792BDE223335FB800B00926 /* SNNestedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNNestedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D792BDE523335FB800B00926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D792BDE723335FB800B00926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,16 @@
 				D734EA57233498C300D2BC08 /* test1.png */,
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		D734EA5B2334B0B900D2BC08 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D734EA5C2334B0CC00D2BC08 /* ArrayExtensions.swift */,
+				D734EA5E2334B0ED00D2BC08 /* UIViewExtensions.swift */,
+				D734EA602334B19400D2BC08 /* SNLog.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D792BDD923335FB800B00926 = {
@@ -164,6 +180,7 @@
 		D792BE152333606700B00926 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				D734EA5B2334B0B900D2BC08 /* Utils */,
 				D792BE162333607600B00926 /* ContentView */,
 				D792BE192333744F00B00926 /* SNNestedScrollTableViewCell.swift */,
 				D792BE1B23337CD300B00926 /* SNNestedTableContentViewController.swift */,
@@ -378,9 +395,12 @@
 				D792BE1A2333744F00B00926 /* SNNestedScrollTableViewCell.swift in Sources */,
 				D792BDEA23335FB800B00926 /* ViewController.swift in Sources */,
 				D792BE202334846F00B00926 /* TopCell.swift in Sources */,
+				D734EA612334B19400D2BC08 /* SNLog.swift in Sources */,
 				D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */,
 				D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */,
+				D734EA5F2334B0ED00D2BC08 /* UIViewExtensions.swift in Sources */,
 				D792BE18233360A900B00926 /* SNNestedPageContentView.swift in Sources */,
+				D734EA5D2334B0CC00D2BC08 /* ArrayExtensions.swift in Sources */,
 				D792BE1C23337CD300B00926 /* SNNestedTableContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

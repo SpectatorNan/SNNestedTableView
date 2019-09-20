@@ -141,7 +141,8 @@ extension ViewController: UITableViewDataSource {
             }
             
             cell.viewControllers = contentVCs
-            cell.pageContentView = SNNestedPageContent(frame: CGRect(x: 0, y: 0, width: SNNestedScreenW, height: SNNestedScreenH), childViewControls: contentVCs, parentViewControl: self)
+            
+            cell.pageContentView = SNNestedPageContent(frame: CGRect(x: 0, y: 0, width: SNNestedScreenW, height: SNNestedScreenH - 88), childViewControls: contentVCs, parentViewControl: self)
             cell.pageContentView?.didEndDecelerating = { pageView, start, end in
                 self.decelerating(contentView: pageView, startIndex: start, endIndex: end)
             }
@@ -169,39 +170,20 @@ extension ViewController: UITableViewDataSource {
     
 }
 
-extension UIView {
-    func fitAutoLayout(view: UIView, superView: UIView) {
-        let leftConstraint = NSLayoutConstraint(item: view, attribute: .leading, relatedBy: .equal, toItem: superView, attribute: .leading, multiplier: 1, constant: 0)
-        let topConstraint = NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: superView, attribute: .top, multiplier: 1, constant: 0)
-        let rightConstraint = NSLayoutConstraint(item: view, attribute: .trailing, relatedBy: .equal, toItem: superView, attribute: .trailing, multiplier: 1, constant: 0)
-        let bottomConstraint = NSLayoutConstraint(item: view, attribute: .bottom, relatedBy: .equal, toItem: superView, attribute: .bottom, multiplier: 1, constant: 0)
-        var constraints = [leftConstraint, topConstraint, rightConstraint, bottomConstraint]
-        constraints.isActive = true
-    }
-}
-
-extension Array where Element: NSLayoutConstraint {
-    var isActive: Bool {
-        set {
-            forEach { $0.isActive = newValue }
-        }
-        get {
-            return !self.compactMap({ $0.isActive }).contains(false)
-        }
-    }
-}
-
 extension ViewController {
     
     func beginScroll(contentView: SNNestedPageContent) {
-        
+//        tableView.isScrollEnabled = false
+        logDebug("page content begin scroll")
     }
     
     func decelerating(contentView: SNNestedPageContent, startIndex: Int, endIndex: Int) {
+        logDebug("page content decelerate")
         tableView.isScrollEnabled = true
     }
     
     func cellScroll(contentView: SNNestedPageContent, startIndex: Int, endIndex: Int, progress: CGFloat) {
+        logDebug("page content scroll")
         tableView.isScrollEnabled = false
     }
 }
@@ -225,6 +207,7 @@ extension ViewController: UITableViewDelegate {
 extension ViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        logDebug("main table scroll")
         let bottomCellOffset = tableView.rect(forSection: 1).origin.y
         if scrollView.contentOffset.y >= bottomCellOffset {
             scrollView.contentOffset = CGPoint(x: 0, y: bottomCellOffset)
