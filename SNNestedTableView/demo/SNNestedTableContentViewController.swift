@@ -76,7 +76,7 @@ extension SNNestedTableContentViewController: UITableViewDataSource {
 //            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
 //        }
         
-        cell.textLabel?.text = "row -- \(indexPath.row)"
+        cell.textLabel?.text = data[indexPath.row] //"row -- \(indexPath.row)"
         
         return cell
     }

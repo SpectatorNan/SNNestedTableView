@@ -57,6 +57,7 @@ extension ViewController {
         configDataSource()
         segmentView.dataSource = segmentDataSource
         segmentView.delegate = self
+        segmentView.backgroundColor = .lightGray
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -208,7 +209,7 @@ extension ViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         logDebug("main table scroll")
-        let bottomCellOffset = tableView.rect(forSection: 1).origin.y
+        let bottomCellOffset = tableView.rect(forSection: 1).origin.y - 88
         if scrollView.contentOffset.y >= bottomCellOffset {
             scrollView.contentOffset = CGPoint(x: 0, y: bottomCellOffset)
             if canScroll {
