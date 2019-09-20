@@ -61,7 +61,7 @@ extension SNNestedCollectionContnetViewController {
     }
     
     func setupViews() {
-        
+        imageListView.alwaysBounceVertical = true
         view.addSubview(imageListView)
         imageListView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
