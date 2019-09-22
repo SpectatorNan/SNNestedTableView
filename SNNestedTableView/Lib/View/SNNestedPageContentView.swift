@@ -51,7 +51,7 @@ public class SNNestedPageContent: UIView {
     /// 是否是滑动
     fileprivate var isSelectBtn = false
     
-    init(frame: CGRect, childViewControls: [SNNestedScrollContentViewControllerTarget], parentViewControl: UIViewController) {
+    public init(frame: CGRect, childViewControls: [SNNestedScrollContentViewControllerTarget], parentViewControl: UIViewController) {
         
         self.parentVC = parentViewControl
         self.childsViewControl = childViewControls
@@ -68,7 +68,7 @@ public class SNNestedPageContent: UIView {
     }
     
     
-     lazy var collectionView: UICollectionView = {
+     public lazy var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = self.bounds.size
         flowLayout.minimumLineSpacing = 0
@@ -91,11 +91,11 @@ public class SNNestedPageContent: UIView {
 //    var testContentDic: [Int: UIViewController] = [:]
     
     /// 开始滑动
-    var beginDragging: ViewCallBack?
+    public var beginDragging: ViewCallBack?
     /// 发生滑动
-    var didScroll: ScrollListenCallBack?
+    public var didScroll: ScrollListenCallBack?
     /// 结束滑动
-    var didEndDecelerating: ScorllDidEndDecelerate?
+    public var didEndDecelerating: ScorllDidEndDecelerate?
     /// 返回每页显示的view
 //    var pageContentViewSouce: PageContentViewSource?
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SNNestedScrollTableViewCell: UITableViewCell {
+public class SNNestedScrollTableViewCell: UITableViewCell {
     
     public var pageContentView: SNNestedPageContent?
     public var viewControllers: [SNNestedScrollContentViewControllerTarget]?
