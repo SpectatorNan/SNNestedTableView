@@ -26,7 +26,7 @@ public class SNNestedPageContent: UIView {
     fileprivate let cellID = "SNNestedPageContentXXXX"
     
     /// 当前页码
-    var currentIndex = 0 {
+    public var currentIndex = 0 {
         didSet {
             if !currentIndexDidSet() {
                 currentIndex = oldValue
@@ -34,14 +34,14 @@ public class SNNestedPageContent: UIView {
         }
     }
     /// 是否可以左右滚动
-    var canScroll = true {
+    public var canScroll = true {
         didSet {
             collectionView.isScrollEnabled = canScroll
         }
     }
     
     /// 父试图
-    fileprivate let parentVC: UIViewController
+    weak var parentVC: UIViewController?
     /// 子视图数组
     fileprivate let childsViewControl: [SNNestedScrollContentViewControllerTarget]
     
@@ -53,11 +53,11 @@ public class SNNestedPageContent: UIView {
     
     public init(frame: CGRect, childViewControls: [SNNestedScrollContentViewControllerTarget], parentViewControl: UIViewController) {
         
-        self.parentVC = parentViewControl
+        
         self.childsViewControl = childViewControls
         
         super.init(frame: frame)
-        
+        self.parentVC = parentViewControl
         contentScroll.isPagingEnabled = true
         
         setupSubviews()
@@ -106,7 +106,7 @@ extension SNNestedPageContent {
     func setupSubviews() {
         
         childsViewControl.forEach { (child) in
-            self.parentVC.addChild(child)
+            self.parentVC?.addChild(child)
         }
         /*
         for (index, child) in childsViewControl.enumerated() {
