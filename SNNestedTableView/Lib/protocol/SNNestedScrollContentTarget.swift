@@ -15,4 +15,18 @@ public protocol SNNestedScrollContentTarget: class {
     var isRefresh: Bool { get set }
     var tagStr: String { get }
     var scrollView: UIScrollView { get }
+
 }
+
+public extension SNNestedScrollContentTarget where Self: UIViewController {
+    var tagStr: String {
+        return title ?? ""
+    }
+}
+
+//public extension SNNestedScrollContentTarget where Self: SNNestedScrollContentViewControllerTarget {
+//
+//    var tagStr: String {
+//        return title ?? ""
+//    }
+//}
