@@ -17,5 +17,7 @@ pod 'KafkaRefresh', '~> 1.0'
 
 pod 'Reveal-SDK', '20', :configurations => ['Debug']
 
+pod 'SNSwiftPackage', :subspecs => ['Base'], :path => '~/Documents/GitHub/SNSwiftPackage/'
+
 end
 

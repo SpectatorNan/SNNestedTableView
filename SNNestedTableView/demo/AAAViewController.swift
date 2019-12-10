@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import KafkaRefresh
+//import KafkaRefresh
 import JXSegmentedView
 
 let leaveTopName = NSNotification.Name("leaveTop")
 
-class ViewController: UIViewController {
+class AAAViewController: UIViewController {
     
     lazy var tableView:SNNestedTableView = { SNNestedTableView() }()
     var contentCell: SNNestedScrollTableViewCell? {
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     let colors = [UIColor.red, .yellow, .black, .blue, .systemPink, .label, .orange]
 }
 
-extension ViewController {
+extension AAAViewController {
     
     func setupViews() {
         
@@ -74,7 +74,7 @@ extension ViewController {
 }
 
 
-extension ViewController {
+extension AAAViewController {
     
     func insertRowAtTop() {
         
@@ -89,7 +89,7 @@ extension ViewController {
     }
 }
 
-extension ViewController {
+extension AAAViewController {
     
     @objc func changeScrollStatus() {
         canScroll = true
@@ -99,7 +99,7 @@ extension ViewController {
 }
 
 
-extension ViewController: UITableViewDataSource {
+extension AAAViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -168,7 +168,7 @@ extension ViewController: UITableViewDataSource {
     
 }
 
-extension ViewController {
+extension AAAViewController {
     
     func beginScroll(contentView: SNNestedPageContent) {
 //        tableView.isScrollEnabled = false
@@ -187,7 +187,7 @@ extension ViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate {
+extension AAAViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return section == 0 ? 0 : 50
@@ -203,7 +203,7 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-extension ViewController {
+extension AAAViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         logDebug("main table scroll")
@@ -223,7 +223,7 @@ extension ViewController {
     }
 }
 
-extension ViewController: JXSegmentedViewDelegate {
+extension AAAViewController: JXSegmentedViewDelegate {
     func segmentedView(_ segmentedView: JXSegmentedView, didClickSelectedItemAt index: Int) {
         contentCell?.pageContentView?.currentIndex = index
     }

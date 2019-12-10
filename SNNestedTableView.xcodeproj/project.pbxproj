@@ -16,7 +16,7 @@
 		D734EA672334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734EA662334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift */; };
 		D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE523335FB800B00926 /* AppDelegate.swift */; };
 		D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE723335FB800B00926 /* SceneDelegate.swift */; };
-		D792BDEA23335FB800B00926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE923335FB800B00926 /* ViewController.swift */; };
+		D792BDEA23335FB800B00926 /* AAAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BDE923335FB800B00926 /* AAAViewController.swift */; };
 		D792BDED23335FB800B00926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792BDEB23335FB800B00926 /* Main.storyboard */; };
 		D792BDEF23335FB900B00926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D792BDEE23335FB900B00926 /* Assets.xcassets */; };
 		D792BDF223335FB900B00926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792BDF023335FB900B00926 /* LaunchScreen.storyboard */; };
@@ -28,6 +28,11 @@
 		D792BE1E2333823A00B00926 /* SNNestedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE1D2333823A00B00926 /* SNNestedTableView.swift */; };
 		D792BE202334846F00B00926 /* TopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792BE1F2334846F00B00926 /* TopCell.swift */; };
 		D7ED708BB2327804EDDF846A /* Pods_SNNestedTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B66D65B86E563E80BDF741 /* Pods_SNNestedTableView.framework */; };
+		E2823C45239F69CD006B7AF4 /* SNNtestedSuperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823C42239F69CD006B7AF4 /* SNNtestedSuperViewModel.swift */; };
+		E2823C46239F69CD006B7AF4 /* SNNestedSuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823C43239F69CD006B7AF4 /* SNNestedSuperViewController.swift */; };
+		E2823C47239F69CD006B7AF4 /* SNNestedTableViewMainContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823C44239F69CD006B7AF4 /* SNNestedTableViewMainContent.swift */; };
+		E2823C4B239F6A14006B7AF4 /* RxSNNestedChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823C49239F6A14006B7AF4 /* RxSNNestedChildViewModel.swift */; };
+		E2823C4C239F6A14006B7AF4 /* RxSNNestedChildViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823C4A239F6A14006B7AF4 /* RxSNNestedChildViewContrller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +65,7 @@
 		D792BDE223335FB800B00926 /* SNNestedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNNestedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D792BDE523335FB800B00926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D792BDE723335FB800B00926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D792BDE923335FB800B00926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D792BDE923335FB800B00926 /* AAAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAAViewController.swift; sourceTree = "<group>"; };
 		D792BDEC23335FB800B00926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D792BDEE23335FB900B00926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D792BDF123335FB900B00926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +81,11 @@
 		D792BE1B23337CD300B00926 /* SNNestedTableContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedTableContentViewController.swift; sourceTree = "<group>"; };
 		D792BE1D2333823A00B00926 /* SNNestedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNestedTableView.swift; sourceTree = "<group>"; };
 		D792BE1F2334846F00B00926 /* TopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
+		E2823C42239F69CD006B7AF4 /* SNNtestedSuperViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNNtestedSuperViewModel.swift; sourceTree = "<group>"; };
+		E2823C43239F69CD006B7AF4 /* SNNestedSuperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNNestedSuperViewController.swift; sourceTree = "<group>"; };
+		E2823C44239F69CD006B7AF4 /* SNNestedTableViewMainContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNNestedTableViewMainContent.swift; sourceTree = "<group>"; };
+		E2823C49239F6A14006B7AF4 /* RxSNNestedChildViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSNNestedChildViewModel.swift; sourceTree = "<group>"; };
+		E2823C4A239F6A14006B7AF4 /* RxSNNestedChildViewContrller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSNNestedChildViewContrller.swift; sourceTree = "<group>"; };
 		E40E292AA3830FB802963A8C /* Pods-SNNestedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNNestedTableView.debug.xcconfig"; path = "Target Support Files/Pods-SNNestedTableView/Pods-SNNestedTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				D792BE1B23337CD300B00926 /* SNNestedTableContentViewController.swift */,
-				D792BDE923335FB800B00926 /* ViewController.swift */,
+				D792BDE923335FB800B00926 /* AAAViewController.swift */,
 				D734EA662334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift */,
 			);
 			path = demo;
@@ -167,6 +177,7 @@
 		D792BDE423335FB800B00926 /* SNNestedTableView */ = {
 			isa = PBXGroup;
 			children = (
+				E2823C41239F69A7006B7AF4 /* SNSwiftPackgeBase */,
 				D734EA5B2334B0B900D2BC08 /* Utils */,
 				D734EA652334B97A00D2BC08 /* demo */,
 				D734EA56233498AD00D2BC08 /* source */,
@@ -217,6 +228,26 @@
 				D792BE17233360A900B00926 /* SNNestedPageContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E2823C41239F69A7006B7AF4 /* SNSwiftPackgeBase */ = {
+			isa = PBXGroup;
+			children = (
+				E2823C48239F6A14006B7AF4 /* Rx */,
+				E2823C43239F69CD006B7AF4 /* SNNestedSuperViewController.swift */,
+				E2823C44239F69CD006B7AF4 /* SNNestedTableViewMainContent.swift */,
+				E2823C42239F69CD006B7AF4 /* SNNtestedSuperViewModel.swift */,
+			);
+			path = SNSwiftPackgeBase;
+			sourceTree = "<group>";
+		};
+		E2823C48239F6A14006B7AF4 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				E2823C49239F6A14006B7AF4 /* RxSNNestedChildViewModel.swift */,
+				E2823C4A239F6A14006B7AF4 /* RxSNNestedChildViewContrller.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		EAE1F4661A5DD314EBDCFDBB /* Frameworks */ = {
@@ -415,15 +446,20 @@
 			files = (
 				D792BE1E2333823A00B00926 /* SNNestedTableView.swift in Sources */,
 				D792BE1A2333744F00B00926 /* SNNestedScrollTableViewCell.swift in Sources */,
-				D792BDEA23335FB800B00926 /* ViewController.swift in Sources */,
+				D792BDEA23335FB800B00926 /* AAAViewController.swift in Sources */,
+				E2823C46239F69CD006B7AF4 /* SNNestedSuperViewController.swift in Sources */,
+				E2823C47239F69CD006B7AF4 /* SNNestedTableViewMainContent.swift in Sources */,
 				D792BE202334846F00B00926 /* TopCell.swift in Sources */,
 				D734EA612334B19400D2BC08 /* SNLog.swift in Sources */,
+				E2823C4C239F6A14006B7AF4 /* RxSNNestedChildViewContrller.swift in Sources */,
 				D792BDE623335FB800B00926 /* AppDelegate.swift in Sources */,
 				D734EA672334BF4D00D2BC08 /* SNNestedCollectionContnetViewController.swift in Sources */,
+				E2823C45239F69CD006B7AF4 /* SNNtestedSuperViewModel.swift in Sources */,
 				D792BDE823335FB800B00926 /* SceneDelegate.swift in Sources */,
 				D734EA642334B87800D2BC08 /* SNNestedScrollContentTarget.swift in Sources */,
 				D734EA5F2334B0ED00D2BC08 /* UIViewExtensions.swift in Sources */,
 				D792BE18233360A900B00926 /* SNNestedPageContentView.swift in Sources */,
+				E2823C4B239F6A14006B7AF4 /* RxSNNestedChildViewModel.swift in Sources */,
 				D734EA5D2334B0CC00D2BC08 /* ArrayExtensions.swift in Sources */,
 				D792BE1C23337CD300B00926 /* SNNestedTableContentViewController.swift in Sources */,
 			);
